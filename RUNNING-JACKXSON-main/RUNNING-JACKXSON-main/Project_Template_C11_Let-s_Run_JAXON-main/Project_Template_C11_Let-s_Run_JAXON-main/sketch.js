@@ -9,7 +9,7 @@ function setup(){
   createCanvas(400,400);
   runner = createSprite(180,360,30,30);
   runner.addAnimation("movingRunner",runnerImg);
-  runner.scale = 0.09;
+  runner.scale = 0.06;
   path = createSprite(200,200);
   path.addImage(pathImg);
   path.velocityY = 4;
