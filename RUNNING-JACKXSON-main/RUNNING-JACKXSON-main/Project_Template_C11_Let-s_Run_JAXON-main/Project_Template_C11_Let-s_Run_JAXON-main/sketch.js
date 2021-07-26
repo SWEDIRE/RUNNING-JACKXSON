@@ -7,7 +7,7 @@ pathImg = loadImage("path.png");
 
 function setup(){
   createCanvas(400,400);
-  runner = createSprite(180,340,30,30);
+  runner = createSprite(180,360,30,30);
   runner.addAnimation("movingRunner",runnerImg);
   runner.scale = 0.09;
   path = createSprite(200,200);
