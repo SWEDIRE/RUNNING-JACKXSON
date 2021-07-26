@@ -9,7 +9,7 @@ function setup(){
   createCanvas(400,400);
   runner = createSprite(180,340,30,30);
   runner.addAnimation("movingRunner",runnerImg);
-  runner.scale = 0.1;
+  runner.scale = 0.09;
   path = createSprite(200,200);
   path.addImage(pathImg);
   path.velocityY = 4;
@@ -28,6 +28,7 @@ function draw() {
   runner.collide(edges[3]);
   runner.collide(lb);
   runner.collide(rb);
+  runner.depth = path.depth +1;
   if (path.y > 400){
    path.y = 200;
   }
