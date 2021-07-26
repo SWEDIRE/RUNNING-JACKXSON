@@ -9,11 +9,11 @@ function setup(){
   createCanvas(400,400);
   runner = createSprite(180,340,30,30);
   runner.addAnimation("movingRunner",runnerImg);
-  runner.scale = 0.08;
+  runner.scale = 0.1;
   path = createSprite(200,200);
   path.addImage(pathImg);
   path.velocityY = 4;
-  path.scale = 0.1;
+  path.scale = 0.8;
   lb = createSprite(0,0,100,800);
   lb.visible = false;
   rb = createSprite(400,0,100,800);
@@ -29,7 +29,7 @@ function draw() {
   runner.collide(lb);
   runner.collide(rb);
   if (path.y > 400){
-   path.y = hieght/2;
+   path.y = 200;
   }
   drawSprites();
 }
