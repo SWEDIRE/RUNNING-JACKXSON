@@ -28,7 +28,7 @@ function draw() {
   runner.collide(edges[3]);
   runner.collide(lb);
   runner.collide(rb);
-  runner.depth;
+  path.depth;
   if (path.y > 400){
    path.y = 200;
   }
